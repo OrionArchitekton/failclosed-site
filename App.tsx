@@ -100,7 +100,7 @@ const App: React.FC = () => {
               href={cta.primaryUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-md bg-copper-dark px-5 py-2.5 text-sm font-medium text-white hover:bg-copper-deep transition-colors"
+              className="inline-flex items-center justify-center rounded-md bg-copper-dark px-5 py-2.5 text-sm font-medium text-white hover:bg-copper-deep transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-copper-dark"
             >
               {cta.primaryLabel}
               <span className="sr-only"> (opens in a new tab)</span>
