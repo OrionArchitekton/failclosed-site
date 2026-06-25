@@ -18,7 +18,7 @@ export const PRODUCT_DATA: ProductData = {
     'Fail-closed merge admission control for agent-written code — run the LLM reviewer, distrust its verdict, and refuse to merge when governance can’t be deterministically evaluated.',
   credibility:
     'Open source (MIT) · Python 3.9+ · One path, no advisory fallback · CI-gating · Self-contained.',
-  canonical: 'https://failclosed.danmercede.com/',
+  canonical: 'https://www.danmercede.com/works/failclosed/',
   metaDescription:
     'failclosed is a local-first, MIT-licensed gate for agent-written code: it runs an LLM reviewer, then refuses to report MERGE_READY when the reviewer output is unparseable, schema-invalid, or self-contradictory. Enforcement precedes the merge decision — a merge that can proceed when governance cannot be evaluated is not governed. Python 3.9+ and the gh CLI; reviewer is a configurable command seam.',
 

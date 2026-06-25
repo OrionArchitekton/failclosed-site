@@ -30,4 +30,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://failclosed.danmercede.com/sitemap.xml
+Sitemap: https://www.danmercede.com/works/failclosed/sitemap.xml

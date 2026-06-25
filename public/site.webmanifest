@@ -1,12 +1,12 @@
 {
   "name": "failclosed",
   "short_name": "failclosed",
-  "start_url": "/",
+  "start_url": "/works/failclosed/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
-    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/works/failclosed/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/works/failclosed/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
