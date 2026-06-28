@@ -1,7 +1,8 @@
 import { ProductData } from './types';
 
 const GITHUB = 'https://github.com/OrionArchitekton/failclosed';
-const RELEASE = 'https://github.com/OrionArchitekton/failclosed/releases/tag/v0.2.0';
+const VERSION = 'v0.2.0';
+const RELEASE = `${GITHUB}/releases/tag/${VERSION}`;
 const SCAN = 'https://danmercede.com';
 
 /**
