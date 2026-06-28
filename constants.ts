@@ -1,14 +1,15 @@
 import { ProductData } from './types';
 
 const GITHUB = 'https://github.com/OrionArchitekton/failclosed';
-const RELEASE = 'https://github.com/OrionArchitekton/failclosed/releases/tag/v0.1.0';
+const VERSION = 'v0.2.0';
+const RELEASE = `${GITHUB}/releases/tag/${VERSION}`;
 const SCAN = 'https://danmercede.com';
 
 /**
  * Single source of truth for the failclosed microsite.
  *
  * All copy is GROUNDED in the real repo (README.md, pyproject.toml, the status
- * codes, and the v0.1.0 GitHub release). failclosed is a runnable CLI gate
+ * codes, and the v0.2.0 GitHub release). failclosed is a runnable CLI gate
  * (Python 3.9+, gh CLI); no fabricated metrics — the demo shows its real
  * status-code behavior on an illustrative review.
  */
@@ -37,7 +38,7 @@ export const PRODUCT_DATA: ProductData = {
   cta: {
     primaryLabel: 'View on GitHub',
     primaryUrl: GITHUB,
-    secondaryLabel: 'Read the v0.1.0 release',
+    secondaryLabel: `Read the ${VERSION} release`,
     secondaryUrl: RELEASE,
   },
 
@@ -137,7 +138,7 @@ export const PRODUCT_DATA: ProductData = {
 
   links: [
     { label: 'GitHub repository', url: GITHUB, primary: true },
-    { label: 'v0.1.0 release', url: RELEASE, primary: true },
+    { label: `${VERSION} release`, url: RELEASE, primary: true },
     { label: 'Runtime Governance Readiness Scan', url: SCAN },
     { label: 'Dan Mercede', url: 'https://www.danmercede.com' },
   ],
