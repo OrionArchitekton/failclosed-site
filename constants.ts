@@ -138,7 +138,7 @@ export const PRODUCT_DATA: ProductData = {
 
   links: [
     { label: 'GitHub repository', url: GITHUB, primary: true },
-    { label: 'v0.2.0 release', url: RELEASE, primary: true },
+    { label: `${VERSION} release`, url: RELEASE, primary: true },
     { label: 'Runtime Governance Readiness Scan', url: SCAN },
     { label: 'Dan Mercede', url: 'https://www.danmercede.com' },
   ],
