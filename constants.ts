@@ -38,7 +38,7 @@ export const PRODUCT_DATA: ProductData = {
   cta: {
     primaryLabel: 'View on GitHub',
     primaryUrl: GITHUB,
-    secondaryLabel: 'Read the v0.2.0 release',
+    secondaryLabel: `Read the ${VERSION} release`,
     secondaryUrl: RELEASE,
   },
 
