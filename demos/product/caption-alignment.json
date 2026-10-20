@@ -1,0 +1,75 @@
+{
+  "source": "Existing per-shot word alignment from this exact recording; original narration retained. Numeric spelling uses the same observed spoken interval.",
+  "cues": [
+    {
+      "start": 0.0,
+      "end": 3.04,
+      "text": "Failclosed checks reviewer output before a merge decision."
+    },
+    {
+      "start": 3.92,
+      "end": 6.22,
+      "text": "Here I am exercising its released native parser"
+    },
+    {
+      "start": 6.4,
+      "end": 9.62,
+      "text": "with synthetic replies. A well formed clean review"
+    },
+    {
+      "start": 9.68,
+      "end": 10.7,
+      "text": "passes the shape check."
+    },
+    {
+      "start": 11.1,
+      "end": 13.219999999999999,
+      "text": "Now the verdict is truncated."
+    },
+    {
+      "start": 13.68,
+      "end": 15.52,
+      "text": "The parser still reports what it could read,"
+    },
+    {
+      "start": 15.76,
+      "end": 17.16,
+      "text": "but marks the schema invalid."
+    },
+    {
+      "start": 17.9,
+      "end": 20.4,
+      "text": "A readable response is not automatically a usable"
+    },
+    {
+      "start": 20.4,
+      "end": 20.88,
+      "text": "review."
+    },
+    {
+      "start": 21.566667,
+      "end": 23.506667,
+      "text": "A fix verdict with no file finding is"
+    },
+    {
+      "start": 23.506667,
+      "end": 26.766666999999998,
+      "text": "invalid too. This demonstrates the parser boundary."
+    },
+    {
+      "start": 27.326667,
+      "end": 30.486666999999997,
+      "text": "The complete workflow also handles reviewer execution and"
+    },
+    {
+      "start": 30.486666999999997,
+      "end": 32.146667,
+      "text": "bot threads; it was not run here."
+    },
+    {
+      "start": 32.706666999999996,
+      "end": 34.066666999999995,
+      "text": "See the source for that integration."
+    }
+  ]
+}
