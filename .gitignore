@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Python demo reproduction artifacts
+__pycache__/
+*.pyc
