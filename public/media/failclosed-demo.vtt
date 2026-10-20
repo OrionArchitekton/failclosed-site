@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.700
+Failclosed checks reviewer output before a merge decision. Here I am exercising its released native parser with synthetic replies. A well formed clean review passes the shape check.
+
+2
+00:00:11.100 --> 00:00:20.880
+Now the verdict is truncated. The parser still reports what it could read, but marks the schema invalid. A readable response is not automatically a usable review.
+
+3
+00:00:21.567 --> 00:00:34.067
+A fix verdict with no file finding is invalid too. This demonstrates the parser boundary. The complete workflow also handles reviewer execution and bot threads; it was not run here. See the source for that integration.
