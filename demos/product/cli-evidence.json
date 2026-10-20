@@ -1,0 +1,14 @@
+{
+  "scope": "Recorded synthetic local demonstration; no API/model call or production mutation",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "parser-demo.py"
+      ],
+      "exit": 0,
+      "stdout": "{\"case\": \"clean\", \"input\": \"Verdict: approve\\nNo findings.\", \"parseable\": true, \"schema_valid\": true, \"parse_warnings\": []}\n{\"case\": \"truncated\", \"input\": \"Verdict:\", \"parseable\": true, \"schema_valid\": false, \"parse_warnings\": [\"native-review stdout had no Verdict: line and no finding markers\"]}\n{\"case\": \"contradictory\", \"input\": \"Verdict: fix\\nNo findings.\", \"parseable\": true, \"schema_valid\": false, \"parse_warnings\": [\"verdict='fix' implies findings but parser extracted none with a file\"]}\n",
+      "stderr": ""
+    }
+  ]
+}

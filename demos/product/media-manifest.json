@@ -1,0 +1,14 @@
+{
+  "slug": "failclosed",
+  "demonstrated_version": "v0.2.0",
+  "source_commit": "dca135adbdb246c84a80c2ca308866dad378a1df",
+  "source_sha256": "305dee28e79cb693866f3dc65b48a60426ae54bc27212e46f469c58f22e9c2fa",
+  "source_name": "agent-demo-video final.mp4",
+  "duration_seconds": 34.5,
+  "voice": "Locally synthesized Dan narration using the existing authorized voice command",
+  "files": {
+    "failclosed-demo.vtt": "a8319ea30b28be8ac4b399532eba3713a1b6307d48acacdda70137e9f7853f9d",
+    "failclosed-demo.mp4": "2bffa3f1419a0ab8817663bdc0ce80cb119e250e7cf0a77577efddc5c7d4bdf1",
+    "failclosed-demo.jpg": "ef38b2f48445ca7ef100e929524bce133140788848eb1c44a72174874f58a810"
+  }
+}
