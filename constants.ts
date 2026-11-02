@@ -23,6 +23,15 @@ export const PRODUCT_DATA: ProductData = {
   metaDescription:
     'failclosed is a local-first, MIT-licensed gate for agent-written code: it runs an LLM reviewer, then refuses to report MERGE_READY when the reviewer output is unparseable, schema-invalid, or self-contradictory. Enforcement precedes the merge decision — a merge that can proceed when governance cannot be evaluated is not governed. Python 3.9+ and the gh CLI; reviewer is a configurable command seam.',
 
+  family: {
+    prefix: 'Part of',
+    name: 'Cosmocrat OS',
+    url: 'https://www.cosmocrat.ai/',
+    description: 'Independent installation, releases, license and support boundaries.',
+    workflowLabel: 'Choose a workflow',
+    workflowUrl: 'https://www.cosmocrat.ai/docs',
+  },
+
   problem: {
     heading: 'The problem',
     body:
