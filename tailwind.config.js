@@ -1,34 +1,29 @@
 /** @type {import('tailwindcss').Config} */
-// Bundled Tailwind config (mirrors the danmercede-info template). Vite emits a
-// compiled stylesheet at build time — no render-blocking CDN JIT compiler. The
-// build-time body-bake (vite-plugin-bodybake.ts) is in the content globs so the
-// skip-link / landmark classes it emits into the baked, pre-hydration markup are
-// not purged. `extend` merges with (does not replace) the default palette, so
-// emerald/red used in the demo terminal remain available.
 export default {
   content: [
     './index.html',
     './index.tsx',
     './App.tsx',
+    './ProductDemo.tsx',
     './constants.ts',
     './vite-plugin-bodybake.ts',
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        display: ['"Newsreader Variable"', 'Newsreader', 'Georgia', 'serif'],
+        sans: ['"IBM Plex Sans Variable"', '"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono Variable"', '"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        neutral: {
-          50: '#f9fafb',
-          100: '#f3f4f6',
-          900: '#111827',
+        navy: {
+          950: '#020B29',
+          900: '#07143A',
+          800: '#0E1F4F',
         },
-        // Dan Mercede brand copper (logo pack). Single accent on the otherwise
-        // monochrome page: primary CTA, section markers, link hovers.
         copper: {
           light: '#FFC08B',
+          soft: '#F0975A',
           DEFAULT: '#E68249',
           dark: '#B95122',
           deep: '#993F17',

@@ -1,10 +1,8 @@
 @import "tailwindcss" source(none);
 @config "./tailwind.config.js";
 
-/* Retain the existing hover rules, including the prior touch-device behavior. */
 @custom-variant hover (&:hover);
 
-/* Scan authored UI only; private review fixtures never supply production classes. */
 @source "./index.html";
 @source "./index.tsx";
 @source "./App.tsx";
@@ -12,34 +10,56 @@
 @source "./constants.ts";
 @source "./vite-plugin-bodybake.ts";
 
-/* Retain the existing palette while the build compiler moves to v4. */
-@theme {
-  --color-emerald-400: #34d399;
-  --color-neutral-200: #e5e5e5;
-  --color-neutral-300: #d4d4d4;
-  --color-neutral-400: #a3a3a3;
-  --color-neutral-500: #737373;
-  --color-neutral-600: #525252;
-  --color-neutral-700: #404040;
-  --color-neutral-800: #262626;
-  --color-red-400: #f87171;
+:root {
+  --orion-bg: #020B29;
+  --orion-surface: #07143A;
+  --orion-surface-elevated: #0E1F4F;
+  --orion-border: #64748B;
+  --orion-ink: #F8FAFC;
+  --orion-ink-secondary: #E2E8F0;
+  --orion-ink-muted: #94A3B8;
+  --orion-accent: #E68249;
+  --orion-accent-hover: #F0975A;
+  --orion-accent-fg: #020B29;
+  --orion-focus: #FFC08B;
+  --orion-font-display: 'Newsreader Variable', 'Newsreader', Georgia, serif;
+  --orion-font-sans: 'IBM Plex Sans Variable', 'IBM Plex Sans', system-ui, sans-serif;
+  --orion-font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
 }
 
-
-/* Base/print styles, emitted into the bundled stylesheet (Tailwind is bundled at
-   build time, not loaded from the CDN), so the served page renders identically. */
 @layer base {
-  /* Preserve v3 border, placeholder and button defaults through the migration. */
-  *, ::before, ::after, ::backdrop, ::file-selector-button { border-color: #e5e7eb; }
-  input::placeholder, textarea::placeholder { color: #9ca3af; }
-  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+  *, ::before, ::after, ::backdrop, ::file-selector-button {
+    border-color: #1E293B;
+  }
+
+  html {
+    background-color: var(--orion-bg);
+    color: var(--orion-ink);
+    font-family: var(--orion-font-sans);
+    scroll-behavior: smooth;
+  }
 
   body {
+    background-color: var(--orion-bg);
+    color: var(--orion-ink);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--orion-focus);
+    outline-offset: 2px;
+  }
+
   @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
     *,
     ::before,
     ::after {
@@ -81,9 +101,7 @@
     break-inside: avoid;
   }
 
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     break-after: avoid;
   }
 
@@ -92,4 +110,8 @@
   }
 }
 
-.product-demo-player { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.product-demo-player {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}

@@ -8,10 +8,13 @@
     "build": "vite build && npm run test:built",
     "preview": "vite preview",
     "test:demo": "npm run build",
-    "test:built": "node --test tests/*.test.mjs",
+    "test:built": "node --test tests/*.test.mjs tests/*.test.ts",
     "test": "npm run build"
   },
   "dependencies": {
+    "@fontsource-variable/ibm-plex-sans": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
@@ -19,6 +22,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "colorjs.io": "^0.7.1",
     "tailwindcss": "^4.3.3",
     "typescript": "~5.8.2",
     "vite": "^6.4.5"
