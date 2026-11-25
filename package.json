@@ -8,7 +8,7 @@
     "build": "vite build && npm run test:built",
     "preview": "vite preview",
     "test:demo": "npm run build",
-    "test:built": "node --test tests/*.test.mjs",
+    "test:built": "node --test tests/*.test.mjs tests/*.test.ts",
     "test": "npm run build"
   },
   "dependencies": {
